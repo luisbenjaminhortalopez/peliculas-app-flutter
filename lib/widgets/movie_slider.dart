@@ -15,7 +15,7 @@ class MovieSlider extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
                   'Populares',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
                 )),
             //expanded toma todo el espacio restante de la columna para renderizar el widget
           const   SizedBox(height: 5,),
@@ -46,7 +46,7 @@ class _MoviePoster extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             child: const FadeInImage(
               placeholder: AssetImage('assets/no-image.jpg'),
-              image: NetworkImage('https://via.placeholder.com/300x400'),
+              image: NetworkImage('https://creativereview.imgix.net/content/uploads/2019/12/joker_full.jpg?auto=compress,format&q=60&w=1012&h=1500'),
               width: 130,
               height: 190,
               fit: BoxFit.cover,
@@ -58,6 +58,7 @@ class _MoviePoster extends StatelessWidget {
         ),
         const Text(
           'Titulo',
+          style: TextStyle(color: Colors.white),
           maxLines: 2,
           textAlign: TextAlign.center,
           //coloca 3 puntos si el texto es mas largo de lo que permite el espacio
